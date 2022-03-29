@@ -10,3 +10,4 @@ const assertEqual = function(array) {
 // TEST CODE
 assertEqual([]);
 assertEqual(["Hello", "Lighthouse", "Labs"]);
+assertEqual(["1", "2", "2"]);
