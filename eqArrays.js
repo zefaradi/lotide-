@@ -6,6 +6,7 @@ const eqArrays = function(actual, expected) {
       break
     }
   } return true
+  
 }
 
 // assertEqual FUNCTION IMPLEMENTATION
