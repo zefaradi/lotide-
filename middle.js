@@ -21,8 +21,8 @@ const middle = function(arr) {
     return newArr
   }else {
     index = Math.round(arr.length/2)
-    newArr.push(arr[index -1 ]);
-    newArr.push(arr[index]);
+    newArr.push(arr[index -1 ], arr[index]);
+    // newArr.push(arr[index]);
     return newArr
   }
 }
