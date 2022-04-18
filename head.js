@@ -1,13 +1,25 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(array) {
+
+const assertEqual = function(actual, expected) {
+
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+    
+};
+
+
+// FUNCTION IMPLEMENTATION
+const head = function(array) {
     if (array.length === 0){
-        console.log('undefined')
+        return ('undefined');
     }else{
-        console.log(array[0])
+        return (array[0]);
     }
 };
 
-// TEST CODE
-assertEqual([]);
-assertEqual(["Hello", "Lighthouse", "Labs"]);
-assertEqual(["1", "2", "2"]);
+// // TEST CODE
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
