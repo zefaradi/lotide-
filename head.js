@@ -13,11 +13,11 @@ const assertEqual = function(actual, expected) {
 
 // FUNCTION IMPLEMENTATION
 const head = function(array) {
-    if (array.length === 0){
-        return ('undefined');
-    }else{
-        return (array[0]);
-    }
+  if (array.length === 0) {
+    return ('undefined');
+  } else {
+    return (array[0]);
+  }
 };
 
 // // TEST CODE
