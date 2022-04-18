@@ -7,19 +7,19 @@ const eqArrays = function(actual, expected) {
   } return true
 }
 
-// assertEqual FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-  console.log(`Assertion Passed: ${actual} === ${expected}`)
+
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`Assertion Failed: ${actual} !=== ${expected}`)
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
+    
 };
 
 const takeUntil = function(array, callback) {
   // ...
   const results = [];
-  let count = 0;
   for (let item of array) {
     if (callback(item)) {
       return results
