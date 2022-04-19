@@ -1,25 +1,11 @@
 // eqArrays FUNCTION IMPLEMENTATION
-const eqArrays = function(actual, expected) {
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  } return true;
-};
+const eqArrays = require('./eqArrays');
 
 // assertArraysEqual  FUNCTION IMPLEMENTATION
-const assertArraysEqual  = function(actual, expected) {
-
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-    
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 
-// Middle FUNCTION IMPLEMENTATION
+// middle FUNCTION IMPLEMENTATION
 const middle = function(arr) {
   let newArr = [];
   let index;
@@ -36,6 +22,4 @@ const middle = function(arr) {
   }
 };
 
-
-// TEST CODE
-assertArraysEqual(middle([1,2,3,4,5,6]),[3,4]);
+module.exports = middle;
