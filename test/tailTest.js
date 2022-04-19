@@ -9,7 +9,7 @@ describe("#tail", () => {
   });
 
   it("returns a length of 3 for ['Yo Yo', 'Lighthouse', 'Labs'] without effecting the original array", () => {
-    word = ["Yo Yo", "Lighthouse", "Labs"];
+    let word = ["Yo Yo", "Lighthouse", "Labs"];
     tail(word);
     assert.deepEqual(word.length,3);
   });

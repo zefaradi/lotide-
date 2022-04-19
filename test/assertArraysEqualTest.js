@@ -1,7 +1,6 @@
 // assertArraysEqual and eqArrays FUNCTION IMPLEMENTATION
 
 const assertArraysEqual = require('../assertArraysEqual');
-const eqArrays = require('../eqArrays');
 
 
 // TEST CODE
