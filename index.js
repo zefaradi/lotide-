@@ -35,4 +35,3 @@ module.exports = {
   without
 };
 
-console.log(module.exports);
