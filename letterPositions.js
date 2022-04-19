@@ -1,11 +1,5 @@
 // eqArrays FUNCTION IMPLEMENTATION
-const eqArrays = function(actual, expected) {
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  } return true;
-};
+const eqArrays = require('./eqArrays');
 
 // assertArraysEqual  FUNCTION IMPLEMENTATION
 const assertArraysEqual  = function(actual, expected) {
@@ -33,8 +27,6 @@ const letterPositions  = function(sentence) {
   return results;
 };
 
-//TEST
-
-assertArraysEqual(letterPositions("hello").e, [1]);
+module.exports = {assertArraysEqual, letterPositions};
 
 

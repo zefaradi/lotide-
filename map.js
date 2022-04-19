@@ -1,20 +1,8 @@
 // eqArrays FUNCTION IMPLEMENTATION
-const eqArrays = function(actual, expected) {
-  for (let i = 0; i < actual.length ; i++) {
-    if (actual[i] !== expected[i]) {
-      return false
-    }
-  } return true
-}
+const eqArrays = require('./eqArrays');
 
 // assertEqual FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 // Map FUNCTION IMPLEMENTATION
 const map = function (array,callback) {
@@ -25,10 +13,4 @@ const map = function (array,callback) {
   return results;
 }
 
-const words = ["ground", "control", "to", "major", "tom"];
-const results1 = map(words, word => word[0]);
-// console.log(results1);
-
-// TEST CODE
-
-assertEqual(words, results1)
+module.exports = map;
