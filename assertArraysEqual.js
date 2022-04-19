@@ -1,11 +1,5 @@
 // eqArrays FUNCTION IMPLEMENTATION
-const eqArrays = function(actual, expected) {
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  } return true;
-};
+const eqArrays = require('./eqArrays');
 
 // assertArraysEqual  FUNCTION IMPLEMENTATION
 const assertArraysEqual  = function(actual, expected) {
@@ -18,6 +12,4 @@ const assertArraysEqual  = function(actual, expected) {
     
 };
 
-// TEST CODE
-
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
+module.exports = assertArraysEqual;
