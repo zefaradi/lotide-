@@ -1,6 +1,3 @@
-// ASSERT EQUAL FUNCTION IMPLEMENTATION
-const assertEqual = require('./assertEqual');
-
 // findKeyByValue FUNCTION IMPLEMENTAION
 
 const findKeyByValue = (object, value) => {

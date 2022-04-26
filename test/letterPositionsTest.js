@@ -1,6 +1,8 @@
-// letterPosition and assertArraysEqual FUNCTION IMPLEMENTATION
+// assertArraysEqual  FUNCTION IMPLEMENTATION
+const assertArraysEqual  = require('../assertArraysEqual');
 
-const {assertArraysEqual, letterPositions} = require('../letterPositions')
+// letterPosition and assertArraysEqual FUNCTION IMPLEMENTATION
+const letterPositions = require('../letterPositions')
 
 
 //TEST

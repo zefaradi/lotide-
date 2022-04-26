@@ -14,7 +14,6 @@ const assertEqual = function(actual, expected) {
 // itemsToCount: an object specifying what to count
 const countLetters = function(words) {
   let newWord = words.replace(/\s/g, '');
-  // console.log("newWord: ", newWord)
   const results = {};
   for (const item of newWord) {
     if (results[item]) {

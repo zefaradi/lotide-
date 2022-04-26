@@ -1,17 +1,5 @@
 // eqArrays FUNCTION IMPLEMENTATION
-const eqArrays = function(actual, expected) {
-  if (actual.length !== expected.length) {
-    return false;
-  }
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  } return true;
-};
-
-// assertEqual FUNCTION IMPLEMENTATION
-const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
@@ -31,4 +19,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-module.exports = {eqArrays, eqObjects};
+module.exports = eqObjects;

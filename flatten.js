@@ -1,9 +1,3 @@
-// eqArrays FUNCTION IMPLEMENTATION
-const eqArrays = require('./eqArrays');
-
-// assertArraysEqual  FUNCTION IMPLEMENTATION
-const assertArraysEqual  = require('./assertArraysEqual');
-
 // flatten FUNCTION IMPLEMENTATION
 const flatten = function(arr) {
   let result = [];

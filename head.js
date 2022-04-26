@@ -1,7 +1,6 @@
 // REQUIRING ASSERT EQUAL
 const assertEqual = require('./assertEqual');
 
-
 // HEAD FUNCTION IMPLEMENTATION
 const head = function(array) {
   if (array.length === 0 || array === undefined) {
